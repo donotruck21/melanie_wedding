@@ -29,7 +29,7 @@ app.config(function($routeProvider, $httpProvider) {
             // controller: "teamsController"
         })
         .when("/photos", {
-            templateUrl: "/partials/photos.html",
+            templateUrl: "/partials/photos.html.erb",
             // controller: "associationsController"
         })
         .when("/registry", {
@@ -42,3 +42,9 @@ app.config(function($routeProvider, $httpProvider) {
         })
     $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content');
 });
+
+
+
+
+
+
