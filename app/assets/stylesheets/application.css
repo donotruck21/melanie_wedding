@@ -1,0 +1,71 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.mainMenu{
+	/*position: fixed;*/
+ }
+
+.main_jumbo{
+	/*border: 5px solid black;*/
+	background-color: white;
+	height: 800px;
+	box-shadow: 2px 2px 15px #888888;
+	}
+
+	.main_jumbo_photo{
+		margin-top: 15px;
+	}
+
+	.main_jumbo_header{
+		font-family: Brush Script MT;
+		font-size: 4em;
+	}
+
+
+.main_our_story_photo, .main_proposal_photo{
+	border: 15px solid white;
+	box-shadow: 2px 2px 15px #888888;
+}
+
+/*.main_our_story{
+	border: 1px dotted black;
+}*/
+
+/*.main_wedding_info{
+	border: 1px dotted black;
+}
+
+.main_wedding_party{
+	border: 1px dotted black;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
