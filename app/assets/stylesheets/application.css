@@ -34,24 +34,64 @@
 		font-size: 4em;
 	}
 
-
 .main_our_story_photo, .main_proposal_photo, .rsvp_photo{
 	border: 15px solid white;
 	box-shadow: 2px 2px 15px #888888;
 }
 
-
 #main_navbar{
 	top: 0;
 	/*border: 1px dotted red;*/
 	position: fixed;
+	height: 80px;
 	background-color: #F7F7F7;
 	margin-right: 45px;
 }
 
+#main_navbar ul{
+	margin-top: 20px;
+}
+
+.cursive{
+	font-family: Brush Script MT;
+}
+
+.enlarge{
+	font-size: 2em;
+}
+.minify{
+	font-size: .8em;
+}
+
+.bridesmaids, .groomsmen{
+	box-shadow: 2px 2px 15px #888888;
+	background-color: white;
+	display: inline-block;
+	vertical-align: top;
+	width: 150px;
+	height: 200px;
+}
+
+.rsvpForm{
+	/*border: 1px dotted red;*/
+	width: 700px;
+}
+ .rsvpForm label{
+ 	width: 120px;
+ 	/*border: 1px dotted green;*/
+ }
 
 
+.rsvp_guests{
+ 	/*border:1px dotted red;*/
+ 	margin-left: 150px;
+ 	width: 500px;
+ }
 
+ .rsvp_guests input{
+ 	/*border:1px dotted red;*/
+ 	width: 300px;
+ }
 
 
 
