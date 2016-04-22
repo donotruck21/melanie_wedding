@@ -58,7 +58,15 @@
 		    	</div>
 		  	</div>
 		</form>
+		<br><br>
+
+		<div class="errors">
+			<p ng-repeat="message in rsvps.message" class="{{ rsvps.color }}"> {{ message }} </p>
+		</div>
+
+
 	</div> <!-- end of rsvpForm -->
+
 
 
 </div>

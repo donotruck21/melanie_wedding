@@ -38,7 +38,10 @@ app.config(function($routeProvider, $httpProvider) {
         })
         .when("/rsvp", {
             templateUrl: "/partials/rsvp.html",
-            // controller: "associationsController"
+            controller: "rsvpsController"
+        })
+        .otherwise({
+            templateUrl: "/partials/ourwedding.html.erb",
         })
     $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content');
 });
@@ -46,5 +49,29 @@ app.config(function($routeProvider, $httpProvider) {
 
 
 
+app.factory("rsvpFactory", function($http){
+    var factory = {};
+
+    factory.create = function(rsvpInfo, callback){
+        $http.post("/rsvps", rsvpInfo).success(function(output){
+            callback(output);
+        })
+    }
+    return factory
+})
+
+
+    // ------rsvps controller------
+
+app.controller("rsvpsController", function($scope, rsvpFactory){
+
+    $scope.createRsvp = function(){
+        rsvpFactory.create($scope.newRsvp, function(json){
+            $scope.rsvps = json;
+            $scope.newRsvp = {};
+        })
+    }
+
+})
 
 
