@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   post '/rsvps' => "rsvps#create"
 
+  
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
