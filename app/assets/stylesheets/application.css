@@ -43,7 +43,7 @@
 	top: 0;
 	/*border: 1px dotted red;*/
 	position: fixed;
-	height: 80px;
+	height: 71px;
 	background-color: #F7F7F7;
 	margin-right: 45px;
 }
@@ -127,7 +127,11 @@
 	list-style-type: none;
 }
 
-
+.googDoc{
+	color: blue;
+	text-decoration: underline;
+	font-size: 1.2em;
+}
 
 
 

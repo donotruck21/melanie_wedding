@@ -8,6 +8,10 @@
     <br><br><br><br>
     <h3>Please RSVP as soon as possible!</h3><br><br>
 
+    <div class="errors">
+		<p ng-repeat="message in rsvps.message" class="{{ rsvps.color }}"> {{ message }} </p>
+	</div>
+
     <div class="rsvpForm">
 	    <form class="form-horizontal">
 
@@ -60,9 +64,7 @@
 		</form>
 		<br><br>
 
-		<div class="errors">
-			<p ng-repeat="message in rsvps.message" class="{{ rsvps.color }}"> {{ message }} </p>
-		</div>
+		
 
 
 	</div> <!-- end of rsvpForm -->
