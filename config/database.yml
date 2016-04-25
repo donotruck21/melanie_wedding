@@ -82,4 +82,4 @@ production:
   <<: *default
   database: mels_wedding_production
   username: mels_wedding
-  password: <%= ENV['MELS_WEDDING_DATABASE_PASSWORD'] %>
+  password:
