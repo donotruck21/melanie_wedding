@@ -40,6 +40,9 @@ app.config(function($routeProvider, $httpProvider) {
             templateUrl: "/partials/rsvp.html",
             controller: "rsvpsController"
         })
+        .when("/", {
+            redirectTo: "/ourwedding"
+        })
         .otherwise({
             redirectTo: "/ourwedding"
         })

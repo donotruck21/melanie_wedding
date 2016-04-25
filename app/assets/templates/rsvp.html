@@ -1,0 +1,70 @@
+<div>
+	<img src="https://farm2.staticflickr.com/1710/26499827411_b4b7b6b4ea_z.jpg" class="rsvp_photo" height=550>
+
+    <br><br><br><br>
+    <h3>Please RSVP as soon as possible!</h3><br><br>
+
+    <div class="errors">
+		<p ng-repeat="message in rsvps.message" class="{{ rsvps.color }}"> {{ message }} </p>
+	</div>
+
+    <div class="rsvpForm">
+	    <form class="form-horizontal">
+
+		  	<div class="form-group">
+		    	<label for="inputName3" class="col-sm-2 control-label">Full Name:*</label>
+		    	<div class="col-sm-10">
+		      		<input ng-model="newRsvp.rsvp.name" type="text" class="form-control" id="inputName3" placeholder="John Smith">
+		    	</div>
+		  	</div>
+
+			<div class="form-group">
+				<label for="inputEmail3" class="col-sm-2 control-label">Email:*</label>
+		    	<div class="col-sm-10">
+		  			<input ng-model="newRsvp.rsvp.email" type="email" class="form-control" id="inputEmail3" placeholder="melandnatemexico@gmail.com">
+		    	</div>
+		  	</div>
+
+		  	<div class="form-group">
+				<label for="inputSong3" class="col-sm-2 control-label">Song Request:*</label>
+		    	<div class="col-sm-10">
+		  			<input ng-model="newRsvp.rsvp.song" type="text" class="form-control" id="inputSong3" placeholder="Summertime - DJ Jazzy Jeff">
+		    	</div>
+		    	<br><br><p class="minify">Disclaimer: Awful song requests will result in immediate invitation retraction.</p>
+		  	</div>
+
+		  	<br><p>If RSVP-ing for your guests, please list their names as well:</p><br>
+
+		  	<div class="rsvp_guests">
+			  	<div class="form-group">
+			    	<label for="inputGuest1_3" class="col-sm-2 control-label">Guest 1:</label>
+			      	<input ng-model="newRsvp.rsvp.guest1" type="text" class="form-control" id="inputGuest1_3" placeholder="">
+			  	</div>
+
+			  	<div class="form-group">
+			    	<label for="inputGuest2_3" class="col-sm-2 control-label">Guest 2:</label>
+			      	<input ng-model="newRsvp.rsvp.guest2" type="text" class="form-control" id="inputGuest2_3" placeholder="">
+			  	</div>
+
+			  	<div class="form-group">
+			    	<label for="inputGuest3_3" class="col-sm-2 control-label">Guest 3:</label>
+			      	<input ng-model="newRsvp.rsvp.guest3" type="text" class="form-control" id="inputGuest3_3">
+			  	</div>
+		  	</div>
+		  	
+		  	<div class="form-group">
+		    	<div class="col-sm-offset-2 col-sm-10">
+		      		<button ng-click="createRsvp()" type="submit" class="btn btn-primary">RSVP</button>
+		    	</div>
+		  	</div>
+		</form>
+		<br><br>
+
+		
+
+
+	</div> <!-- end of rsvpForm -->
+
+
+
+</div>
