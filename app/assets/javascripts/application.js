@@ -41,7 +41,8 @@ app.config(function($routeProvider, $httpProvider) {
             controller: "rsvpsController"
         })
         .otherwise({
-            templateUrl: "/partials/ourwedding.html.erb",
+            console.log("should be loading this shit"),
+            redirectTo: "/ourwedding",
         })
     $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content');
 });
