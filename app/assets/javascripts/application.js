@@ -21,7 +21,7 @@ var app = angular.module('weddingApp', ['ngRoute']);
 app.config(function($routeProvider, $httpProvider) {
     $routeProvider
         .when("/ourwedding", {
-            templateUrl: "/partials/ourwedding.html.erb",
+            templateUrl: "/partials/ourwedding.html",
             // controller: "playersController"
         })
         .when("/details", {
@@ -29,7 +29,7 @@ app.config(function($routeProvider, $httpProvider) {
             // controller: "teamsController"
         })
         .when("/photos", {
-            templateUrl: "/partials/photos.html.erb",
+            templateUrl: "/partials/photos.html",
             // controller: "associationsController"
         })
         .when("/registry", {
@@ -41,7 +41,7 @@ app.config(function($routeProvider, $httpProvider) {
             controller: "rsvpsController"
         })
         .otherwise({
-            templateUrl: "/partials/ourwedding.html.erb",
+            templateUrl: "/partials/ourwedding.html",
         })
     $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content');
 });
