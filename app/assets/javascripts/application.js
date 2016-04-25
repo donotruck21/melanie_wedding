@@ -42,9 +42,9 @@ app.config(function($routeProvider, $httpProvider) {
         })
         .otherwise({
             console.log("should be loading this shit"),
-            redirectTo: "/ourwedding",
+            redirectTo: "/ourwedding"
         })
-    $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content');
+        $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content');
 });
 
 
