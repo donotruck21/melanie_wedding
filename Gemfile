@@ -27,9 +27,6 @@ gem 'spring',        group: :development
 
 gem 'hirb'
 
-gem 'rails-footnotes', '>= 4.0.0', '<5'
-#rails generate rails_footnotes:install
-
 gem 'rename'
 
 # Use ActiveModel has_secure_password

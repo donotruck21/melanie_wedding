@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: mels_wedding_production
-  username: ubuntu
+  username: mels_wedding
   password:
