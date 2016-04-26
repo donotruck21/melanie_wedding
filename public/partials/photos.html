@@ -1,35 +1,112 @@
+<style type="text/css">
+	.myCarousel{
+		border: 1px solid white;
+		width: 750px;
+		height: 450px;
+	}
+
+	.grow{
+		height: 450px;
+	}
+
+	.carousel-inner>.item>img{
+		height: 450px;
+	}
+
+</style>
+
 <div>
     <h1 class="cursive enlarge3">Photos</h1><br>
 
-    <div class="row">
-	  <div class="col-xs-6 col-md-3">
-	    <!-- <a href="#" class="thumbnail"> -->
-	      <img src="https://farm2.staticflickr.com/1501/26473504102_33b04e078b_m.jpg" alt="..." class="thumbnail">
-	    <!-- </a> -->
-	  </div>
+<!--     <div class="row">
+	  	<div class="col-xs-6 col-md-3">
+	      	<img src="https://farm2.staticflickr.com/1501/26473504102_33b04e078b_m.jpg" alt="..." class="thumbnail">
+	  	</div>
 
-	  <div class="col-xs-6 col-md-3">
-	    <!-- <a href="#" class="thumbnail"> -->
-	      <img src="https://farm2.staticflickr.com/1441/26473502962_7cc10ed311_m.jpg" alt="..." class="thumbnail">
-	    <!-- </a> -->
-	  </div>
+	  	<div class="col-xs-6 col-md-3">
+	      	<img src="https://farm2.staticflickr.com/1441/26473502962_7cc10ed311_m.jpg" alt="..." class="thumbnail">
+	  	</div>
 
-	  <div class="col-xs-6 col-md-3">
-	    <!-- <a href="#" class="thumbnail"> -->
-	      <img src="https://farm2.staticflickr.com/1522/26473502372_05c4625e19_m.jpg" alt="..." class="thumbnail">
-	    <!-- </a> -->
-	  </div>
+	  	<div class="col-xs-6 col-md-3">
+	      	<img src="https://farm2.staticflickr.com/1522/26473502372_05c4625e19_m.jpg" alt="..." class="thumbnail">
+	  	</div>
 
-	  <div class="col-xs-6 col-md-3">
-	    <!-- <a href="#" class="thumbnail"> -->
-	      <img src="https://farm2.staticflickr.com/1663/26499825661_031d119af4_m.jpg" alt="..." class="thumbnail">
-	    <!-- </a> -->
-	  </div>
-	</div><br><br>
+	  	<div class="col-xs-6 col-md-3">
+	      	<img src="https://farm2.staticflickr.com/1663/26499825661_031d119af4_m.jpg" alt="..." class="thumbnail">
+	  	</div>
+	</div><br><br> -->
 
-	<h2 class="cursive">More to come!</h2>
+	<div class="myCarousel carousel slide">
+		<ol class="carousel-indicators">
+			<li data-target = ".myCarousel" data-slide-to = "0" class = "active"></li>
+			<li data-target = ".myCarousel" data-slide-to = "1"></li>
+			<li data-target = ".myCarousel" data-slide-to = "2"></li>
+			<li data-target = ".myCarousel" data-slide-to = "3"></li>
+			<li data-target = ".myCarousel" data-slide-to = "4"></li>
+			<li data-target = ".myCarousel" data-slide-to = "5"></li>
+		</ol>
+
+		<div class="carousel-inner grow">
+
+			<div class="item active grow">
+				<img src="https://c3.staticflickr.com/2/1441/26473502962_060dc32175_k.jpg" alt="pic1" class = "img-responsive grow">
+			</div>
+
+			<div class="item grow">
+				<img src="https://c7.staticflickr.com/2/1501/26473504102_9f85d7d8f1_k.jpg" alt="pic1" class = "img-responsive grow">
+			</div>
+
+			<div class="item grow">
+				<img src="https://c5.staticflickr.com/2/1522/26473502372_e5a840bb6c_k.jpg" alt="pic1" class = "img-responsive grow">
+			</div>
+
+			<div class="item grow">
+				<img src="https://c6.staticflickr.com/2/1663/26499825661_519ec324e2_k.jpg" alt="pic1" class = "img-responsive grow">
+			</div>
+			
+			<div class="item grow">
+				<img src="https://farm2.staticflickr.com/1562/26473505012_4d8a966b93_z.jpg" alt="pic1" class = "img-responsive grow">
+			</div>
+
+			<div class="item grow">
+				<img src="https://farm2.staticflickr.com/1710/26499827411_b4b7b6b4ea_z.jpg" alt="pic1" class = "img-responsive grow">
+			</div>
+
+		</div>
+
+		<a class = "carousel-control left" href = ".myCarousel" data-slide = "prev">
+			<span class = "icon-prev"></span>
+		</a>
+
+		<a class = "carousel-control right" href = ".myCarousel" data-slide = "next">
+			<span class = "icon-next"></span>
+		</a>
+	
+	</div><!-- end of carousel -->
+	<br><br>
+
+	<h2 class="cursive">More to come!!</h2>
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
