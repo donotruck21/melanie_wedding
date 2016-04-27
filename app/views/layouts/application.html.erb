@@ -146,17 +146,9 @@
 		width: 650px;
 	}
 
-	.resort_link{
+	.resort_link, .ring_bearer{
 		display: inline-block;
 	}
-
-	.ring_bearer{
-		display: inline-block;
-	}
-
-	.flower_girl{
-	 	margin-left: 20px;
-	 }
 
 	.Wbq597J{
 		list-style-type: none;
@@ -174,11 +166,7 @@
 		box-shadow: 2px 2px 15px #888888;
 	}
 
-	.grow{
-		height: 450px;
-	}
-
-	.carousel-inner>.item>img{
+	.carousel-inner>.item>img, .grow{
 		height: 450px;
 	}
 
@@ -193,16 +181,25 @@
 		opacity: .5;
 	}
 
-	.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev{
-		color: black;
-	}
-	.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next{
+	.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next{
 		color: black;
 	}
 </style>
 
 
 <body>
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=163466704048605";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+
 	<div class="contain">
 		<div class="container-fluid">
 			<%= yield %>
