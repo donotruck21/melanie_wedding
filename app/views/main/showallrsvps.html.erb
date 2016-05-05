@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>RSVPS</h1><br>
+	<table class="table table-striped table-bordered table hover">
+		<thead>
+			<th class="success">Name</th>
+			<th class="success">Email</th>
+			<th class="success">Song</th>
+			<th class="success">Guest 1</th>
+			<th class="success">Guest 2</th>
+			<th class="success">Guest 3</th>
+		</thead>
+		<tbody>
+			<% @rsvps.each do |rsvp| %>
+				<tr>
+					<td><%= rsvp.name %></td>
+					<td><%= rsvp.email %></td>
+					<td><%= rsvp.song %></td>
+					<td><%= rsvp.guest1 %></td>
+					<td><%= rsvp.guest2 %></td>
+					<td><%= rsvp.guest3 %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</body>
+</html>
